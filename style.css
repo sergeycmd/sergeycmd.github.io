@@ -1,27 +1,162 @@
-/* Стили для рамки формы комментариев */
-iframe {
-    border: 2px solid #fff; /* Белая рамка */
-    border-radius: 5px; /* Скругление углов */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Легкая тень */
-    margin-top: 20px;
+@font-face {
+    font-family: 'Stor';
+    src: url('fonts/Stor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Исправление серых рамок и улучшение меню на мобильных устройствах */
+body {
+    font-family: 'Stor', serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
 .profile-photo {
-    border: 5px solid #fff; /* Белая рамка вокруг фото */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.bio-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg);
+}
+
+.menu-icon-bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
 }
 
 .menu-list {
-    background-color: #333; /* Темный фон для меню */
-    border-radius: 8px; /* Скругление углов */
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 5;
+    width: 200px;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.menu-list.show-menu {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-list li {
+    margin: 10px 0;
+    text-align: center;
 }
 
 .menu-list li a {
-    background-color: #333; /* Фон элементов меню */
-    color: #fff; /* Белый текст */
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 18px;
+}
+
+.menu-list li a i {
+    margin-right: 8px;
 }
 
 .menu-list li a:hover {
-    background-color: #fff; /* Фон при наведении */
-    color: #000; /* Черный текст при наведении */
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+}
+
+.link {
+    color: #f0f0f0;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #ffd700;
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-text {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/* Стили для скроллбаров */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
 }
