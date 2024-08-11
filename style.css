@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Stor';
+    src: url('fonts/Stor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Stor', serif;
     background-color: #000;
@@ -7,15 +14,29 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    position: relative;
-    min-height: 100vh;
 }
 
 .container {
+    text-align: center;
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 20px;
-    z-index: 2;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.bio-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 .menu-icon {
@@ -94,21 +115,6 @@ body {
 
 .link:hover {
     color: #ffd700;
-}
-
-.profile-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
-}
-
-.bio-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    padding: 20px;
 }
 
 #comment-form {
