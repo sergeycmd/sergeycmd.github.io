@@ -11,9 +11,18 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Убирает боковой скроллбар */
-    overflow-y: auto;   /* Добавляет вертикальный скроллбар */
-    scroll-behavior: smooth; /* Плавная прокрутка */
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .container {
