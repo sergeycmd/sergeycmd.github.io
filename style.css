@@ -27,7 +27,7 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 5px solid #fff; /* Сделаем рамку белой */
     margin-bottom: 20px;
 }
 
@@ -63,7 +63,8 @@ body {
     position: fixed;
     top: 60px;
     right: 20px;
-    background-color: #333;
+    background-color: #fff; /* Сделаем фон белым */
+    color: #000; /* Сделаем текст черным */
     list-style-type: none;
     padding: 10px;
     border-radius: 8px;
@@ -88,7 +89,7 @@ body {
 }
 
 .menu-list li a {
-    color: #fff;
+    color: #000; /* Текст ссылки черный */
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -102,8 +103,8 @@ body {
 
 .menu-list li a:hover {
     transform: scale(1.1);
-    background-color: #fff;
-    color: #000;
+    background-color: #ffd700; /* Цвет фона при наведении */
+    color: #000; /* Цвет текста при наведении */
 }
 
 .link {
@@ -187,6 +188,7 @@ button:hover {
     iframe {
         width: 100%;
         height: 500px;
+        border: 2px solid #fff; /* Белая рамка для iframe */
     }
 }
 
