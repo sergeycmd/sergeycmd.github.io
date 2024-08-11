@@ -5,61 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сергей Ефремов - Задира Джек</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Подключение шрифтов и иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEHPY2W4M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-LQEHPY2W4M');
     </script>
-    <!-- End Google Analytics -->
-
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-        height: 100%;
-        font-family: 'Stor', serif;
-        background-color: #000;
-        color: #fff;
-        scroll-behavior: smooth;
-      }
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-      .container {
-        text-align: center;
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-        padding: 20px;
-      }
-    </style>
 </head>
 <body>
-    <div id="particles-js"></div>
     <div class="container">
         <div class="menu-icon">
             <div class="menu-icon-bar"></div>
             <div class="menu-icon-bar"></div>
             <div class="menu-icon-bar"></div>
         </div>
-
         <ul class="menu-list">
             <li><a href="https://www.tiktok.com/@zadirajack"><i class="fab fa-tiktok"></i> TikTok</a></li>
             <li><a href="https://t.me/zadiraJack"><i class="fab fa-telegram"></i> Telegram</a></li>
@@ -67,7 +28,6 @@
             <li><a href="https://www.tinkoff.ru/cf/1DrUvbVtpoC"><i class="fas fa-donate"></i> Донаты</a></li>
             <li><a href="#comments"><i class="fas fa-comments"></i> Комментарии</a></li>
         </ul>
-
         <div class="bio-content">
             <img src="images/your-photo.jpg" alt="Сергей Ефремов" class="profile-photo">
             <p>Привет! Меня зовут Сергей Ефремов, но в интернете я известен как Задира Джек. Я занимаюсь созданием комедийных скетчей и развлекательных видео на TikTok.<br><br>
@@ -77,111 +37,20 @@
 
             <p>Я всегда открыт для новых предложений и сотрудничества. С радостью делаю коллаборации с другими создателями контента, особенно если это приносит радость зрителям и поднимает настроение. Моя цель – создавать качественные и оригинальные видео, которые выделяются среди множества других. Я стремлюсь постоянно улучшать свои навыки, экспериментировать с форматами и идеями, чтобы радовать своих зрителей чем-то новым и интересным.</p>
         </div>
-
         <section id="comments">
             <h2>Комментарии</h2>
             <p>Здесь вы можете оставлять свои комментарии и отзывы о моем контенте. Ваше мнение очень важно для меня, и я буду рад узнать, что вы думаете о моих видео и проектах. Вы можете оставить свой отзыв ниже, и я постараюсь ответить на него как можно скорее.</p>
-            <!-- Встраивание формы Google Forms -->
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSLxvdxbBwmEbuDcaVdARiGeBvpOQKiMBpl8CYDsCJ4T8__Q/viewform?embedded=true" width="640" height="450" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </section>
     </div>
-
     <script>
-      particlesJS('particles-js', {
-        "particles": {
-          "number": {
-            "value": 100,
-            "density": {
-              "enable": true,
-              "value_area": 800
-            }
-          },
-          "color": {
-            "value": "#ffffff"
-          },
-          "shape": {
-            "type": "circle"
-          },
-          "opacity": {
-            "value": 0.5,
-            "anim": {
-              "enable": true,
-              "speed": 1,
-              "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 3,
-            "anim": {
-              "enable": true,
-              "speed": 4,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "repulse"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            },
-            "resize": true
-          },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
-              }
-            },
-            "bubble": {
-              "distance": 250,
-              "size": 0,
-              "duration": 2,
-              "opacity": 0.8,
-              "speed": 3
-            },
-            "repulse": {
-              "distance": 400,
-              "duration": 0.4
-            },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
-            }
-          }
-        },
-        "retina_detect": true
+      document.addEventListener('DOMContentLoaded', function() {
+          const menuIcon = document.querySelector('.menu-icon');
+          const menuList = document.querySelector('.menu-list');
+
+          menuIcon.addEventListener('click', function() {
+              menuList.classList.toggle('show-menu');
+          });
       });
     </script>
 </body>
