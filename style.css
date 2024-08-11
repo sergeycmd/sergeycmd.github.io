@@ -126,6 +126,24 @@ body {
     color: #ffd700;
 }
 
+/* Новый стиль для комментариев */
+.comment-wrapper {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.comment-section {
+    text-align: center; /* Центрирование текста внутри секции */
+    max-width: 800px;  /* Опционально: задайте максимальную ширину */
+    background-color: #333; /* Фоновый цвет для лучшей видимости */
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
 #disqus_thread {
     margin-top: 20px;
 }
