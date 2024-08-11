@@ -111,33 +111,6 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
     margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-}
-
-.fire-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ff6f00;
-    text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    position: absolute;
-    top: 270px; /* Отступ от фото */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    animation: flame 1.5s infinite;
-}
-
-@keyframes flame {
-    0% {
-        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    }
-    50% {
-        text-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00, 0 0 30px #ff6f00, 0 0 40px #ff6f00;
-    }
-    100% {
-        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    }
 }
 
 .bio-content {
@@ -145,7 +118,6 @@ body {
     margin: 0 auto;
     line-height: 1.6;
     padding: 20px;
-    z-index: 2;
 }
 
 #comment-form {
