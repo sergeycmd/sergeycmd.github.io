@@ -21,6 +21,8 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку внутри контейнера */
 }
 
 .profile-photo {
@@ -29,6 +31,7 @@ body {
     border-radius: 50%;
     border: 5px solid #fff; /* Белая рамка вокруг фото */
     margin-bottom: 20px;
+    box-sizing: border-box; /* Учитываем рамку в общей ширине элемента */
 }
 
 .bio-content {
@@ -36,6 +39,8 @@ body {
     margin: 0 auto;
     line-height: 1.6;
     padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .menu-icon {
@@ -76,6 +81,7 @@ body {
     opacity: 0;
     transform: translateX(20px);
     border: 2px solid #fff; /* Белая рамка вокруг меню */
+    box-sizing: border-box;
 }
 
 .menu-list.show-menu {
@@ -96,6 +102,7 @@ body {
     padding: 10px;
     transition: transform 0.3s, background-color 0.3s;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .menu-list li a i {
@@ -130,6 +137,7 @@ body {
     border: 1px solid #ccc;
     background-color: #333;
     color: #fff;
+    box-sizing: border-box;
 }
 
 button {
@@ -141,6 +149,7 @@ button {
     color: #000;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 button:hover {
