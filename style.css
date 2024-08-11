@@ -31,6 +31,7 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .bio-content {
@@ -78,6 +79,7 @@ body {
     opacity: 0;
     transform: translateX(20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .menu-list.show-menu {
@@ -131,6 +133,7 @@ iframe {
     max-width: 800px;
     height: 450px;
     box-sizing: border-box;
+    display: block; /* Ensure the iframe is displayed correctly */
 }
 
 /* Стили для скроллбаров */
