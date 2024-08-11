@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Stor';
+    src: url('fonts/Stor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Stor', serif;
     background-color: #000;
@@ -7,24 +14,38 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    position: relative;
-    min-height: 100vh;
 }
 
 #particles-js {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .container {
+    text-align: center;
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 20px;
-    z-index: 2;
+}
+
+.profile-photo {
+    width: 250px; /* Увеличение размера фото */
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.bio-content {
+    max-width: 800px; /* Увеличение ширины контента */
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 .menu-icon {
@@ -33,11 +54,11 @@ body {
     right: 20px;
     cursor: pointer;
     z-index: 10;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Анимация при наведении */
 }
 
 .menu-icon:hover {
-    transform: rotate(90deg);
+    transform: rotate(90deg); /* Вращение иконки при наведении */
 }
 
 .menu-icon-bar {
@@ -60,7 +81,7 @@ body {
     width: 200px;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s; /* Анимация появления меню */
     opacity: 0;
     transform: translateX(20px);
 }
@@ -86,7 +107,7 @@ body {
 }
 
 .menu-list li a i {
-    margin-right: 8px;
+    margin-right: 8px; /* Отступ для иконок */
 }
 
 .menu-list li a:hover {
@@ -103,49 +124,6 @@ body {
 
 .link:hover {
     color: #ffd700;
-}
-
-.profile-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-}
-
-.fire-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ff6f00;
-    text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    position: absolute;
-    top: 270px; /* Отступ от фото */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    animation: flame 1.5s infinite;
-}
-
-@keyframes flame {
-    0% {
-        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    }
-    50% {
-        text-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00, 0 0 30px #ff6f00, 0 0 40px #ff6f00;
-    }
-    100% {
-        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
-    }
-}
-
-.bio-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    padding: 20px;
-    z-index: 2;
 }
 
 #comment-form {
