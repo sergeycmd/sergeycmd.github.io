@@ -11,7 +11,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Отключаем горизонтальный скролл */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 5px solid #fff; /* Белая рамка */
+    border: 5px solid #fff; /* Белая рамка вокруг фото */
     margin-bottom: 20px;
 }
 
@@ -63,11 +63,11 @@ body {
     position: fixed;
     top: 60px;
     right: 20px;
-    background-color: #000; /* Фон меню черный */
-    color: #fff; /* Текст белый */
+    background-color: #000; /* Чёрный фон */
+    color: #fff;
     list-style-type: none;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 8px; /* Закругленные края */
     z-index: 5;
     width: 200px;
     max-height: calc(100vh - 60px);
@@ -75,6 +75,7 @@ body {
     transition: opacity 0.3s, transform 0.3s;
     opacity: 0;
     transform: translateX(20px);
+    border: 2px solid #fff; /* Белая рамка вокруг меню */
 }
 
 .menu-list.show-menu {
@@ -89,7 +90,7 @@ body {
 }
 
 .menu-list li a {
-    color: #fff; /* Текст ссылки белый */
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -103,8 +104,8 @@ body {
 
 .menu-list li a:hover {
     transform: scale(1.1);
-    background-color: #fff; /* Белый фон при наведении */
-    color: #000; /* Черный текст при наведении */
+    background-color: #fff;
+    color: #000;
 }
 
 .link {
@@ -164,11 +165,11 @@ button:hover {
 /* Стили для iframe (Google Forms) */
 iframe {
     width: 100%;
-    max-width: 100%; /* Убедимся, что iframe не выходит за пределы экрана */
+    max-width: 100%;
     height: 450px;
     border: 2px solid #fff; /* Белая рамка */
-    border-radius: 8px;
-    box-sizing: border-box; /* Учитываем рамку и padding */
+    border-radius: 8px; /* Закругленные края */
+    box-sizing: border-box;
 }
 
 /* Адаптивные стили */
@@ -183,11 +184,10 @@ iframe {
     }
 
     .menu-list {
-        width: 100%;
-        max-width: 300px;
+        width: 90%;
         top: 60px;
-        right: 0;
-        border-radius: 0;
+        right: 5%;
+        border-radius: 8px; /* Закругленные края */
         box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
 
