@@ -21,28 +21,6 @@
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-      .container {
-        position: relative;
-        z-index: 1;
-        padding: 20px;
-        /* Ваши стили для контейнера */
-      }
-    </style>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -63,6 +41,7 @@
 
         <div class="bio-content">
             <img src="images/your-photo.jpg" alt="Сергей Ефремов" class="profile-photo">
+            <div class="fire-text">Задира Джек</div>
             <p>Привет! Меня зовут Сергей Ефремов, но в интернете я известен как Задира Джек. Я занимаюсь созданием комедийных скетчей и развлекательных видео на TikTok.<br><br>
             Начал свою карьеру в 2023 году, работая оператором на канале <a href="https://www.tiktok.com/@chuchalovv?_t=8olkbjrqChU&_r=1" class="link">Ярослава Чучалова (Ярославч)</a>. Опыт, полученный в этой роли, вдохновил меня начать собственный путь в мире контента.<br><br>
             С тех пор мой канал набрал более 22 000 подписчиков. Я люблю создавать видео, которые заставляют людей улыбаться и поднимают настроение.<br><br>
@@ -79,104 +58,85 @@
         </section>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Скрипт инициализации Particles.js -->
     <script>
-      particlesJS('particles-js', {
-        "particles": {
-          "number": {
-            "value": 100,
-            "density": {
-              "enable": true,
-              "value_area": 800
-            }
-          },
-          "color": {
-            "value": "#ffffff"
-          },
-          "shape": {
-            "type": "circle"
-          },
-          "opacity": {
-            "value": 0.5,
-            "anim": {
-              "enable": true,
-              "speed": 1,
-              "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 3,
-            "anim": {
-              "enable": true,
-              "speed": 4,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-          },
-          "move": {
-            "enable": true,
-            "speed": 6,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "repulse"
-            },
-            "onclick": {
-              "enable": true,
-              "mode": "push"
-            },
-            "resize": true
-          },
-          "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
+        particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 100,
+              "density": {
+                "enable": true,
+                "value_area": 800
               }
             },
-            "bubble": {
-              "distance": 250,
-              "size": 0,
-              "duration": 2,
-              "opacity": 0.8,
-              "speed": 3
+            "color": {
+              "value": "#ffffff"
             },
-            "repulse": {
-              "distance": 400,
-              "duration": 0.4
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              }
             },
-            "push": {
-              "particles_nb": 4
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
             },
-            "remove": {
-              "particles_nb": 2
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": false,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
             }
-          }
-        },
-        "retina_detect": true
-      });
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": false,
+                "mode": "push"
+              },
+              "resize": true
+            }
+          },
+          "retina_detect": true
+        });
     </script>
 </body>
 </html>
