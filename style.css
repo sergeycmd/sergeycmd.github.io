@@ -1,3 +1,11 @@
+/* Подключение кастомного шрифта */
+@font-face {
+    font-family: 'Stor';
+    src: url('https://zadirajack.github.io/fonts/Stor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Общие настройки для body */
 body {
     font-family: 'Stor', serif;
