@@ -26,7 +26,13 @@
       body, html {
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        font-family: 'Stor', serif;
+        background-color: #000;
+        color: #fff;
+        scroll-behavior: smooth;
       }
       #particles-js {
         position: absolute;
@@ -37,10 +43,11 @@
         z-index: -1;
       }
       .container {
+        text-align: center;
         position: relative;
-        z-index: 1;
+        width: 100%;
+        min-height: 100vh;
         padding: 20px;
-        /* Ваши стили для контейнера */
       }
     </style>
 </head>
@@ -79,7 +86,6 @@
         </section>
     </div>
 
-    <script src="script.js"></script>
     <script>
       particlesJS('particles-js', {
         "particles": {
