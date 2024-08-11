@@ -23,7 +23,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js"></div>
+    <div id="particles-js"></div> <!-- Контейнер для частиц -->
+
     <div class="container">
         <div class="menu-icon">
             <div class="menu-icon-bar"></div>
@@ -40,8 +41,10 @@
         </ul>
 
         <div class="bio-content">
-            <img src="images/your-photo.jpg" alt="Сергей Ефремов" class="profile-photo">
-            <div class="fire-text">Задира Джек</div>
+            <div class="profile-photo">
+                <img src="images/your-photo.jpg" alt="Сергей Ефремов" class="profile-photo">
+                <div class="fire-text">Задира Джек</div> <!-- Огонь -->
+            </div>
             <p>Привет! Меня зовут Сергей Ефремов, но в интернете я известен как Задира Джек. Я занимаюсь созданием комедийных скетчей и развлекательных видео на TikTok.<br><br>
             Начал свою карьеру в 2023 году, работая оператором на канале <a href="https://www.tiktok.com/@chuchalovv?_t=8olkbjrqChU&_r=1" class="link">Ярослава Чучалова (Ярославч)</a>. Опыт, полученный в этой роли, вдохновил меня начать собственный путь в мире контента.<br><br>
             С тех пор мой канал набрал более 22 000 подписчиков. Я люблю создавать видео, которые заставляют людей улыбаться и поднимают настроение.<br><br>
@@ -58,85 +61,6 @@
         </section>
     </div>
 
-    <!-- Скрипт инициализации Particles.js -->
-    <script>
-        particlesJS('particles-js', {
-          "particles": {
-            "number": {
-              "value": 100,
-              "density": {
-                "enable": true,
-                "value_area": 800
-              }
-            },
-            "color": {
-              "value": "#ffffff"
-            },
-            "shape": {
-              "type": "circle",
-              "stroke": {
-                "width": 0,
-                "color": "#000000"
-              }
-            },
-            "opacity": {
-              "value": 0.5,
-              "random": false,
-              "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-              }
-            },
-            "size": {
-              "value": 3,
-              "random": true,
-              "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-              }
-            },
-            "line_linked": {
-              "enable": false,
-              "distance": 150,
-              "color": "#ffffff",
-              "opacity": 0.4,
-              "width": 1
-            },
-            "move": {
-              "enable": true,
-              "speed": 6,
-              "direction": "none",
-              "random": false,
-              "straight": false,
-              "out_mode": "out",
-              "bounce": false,
-              "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-              }
-            }
-          },
-          "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-              "onhover": {
-                "enable": false,
-                "mode": "repulse"
-              },
-              "onclick": {
-                "enable": false,
-                "mode": "push"
-              },
-              "resize": true
-            }
-          },
-          "retina_detect": true
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
