@@ -1,66 +1,37 @@
-@font-face {
-    font-family: 'Stor';
-    src: url('fonts/Stor.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* Основные стили */
 body {
     font-family: 'Stor', serif;
     background-color: #000;
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Убирает боковой скроллбар */
-    overflow-y: auto;   /* Добавляет вертикальный скроллбар */
-    scroll-behavior: smooth; /* Плавная прокрутка */
-    position: relative; /* Необходимо для размещения блока частиц */
-    height: 100vh; /* Устанавливает высоту страницы на 100% высоты экрана */
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100vh; /* Убедитесь, что тело занимает весь экран */
 }
 
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Помещает частиц на задний план */
-}
-
+/* Контейнер для всего контента */
 .container {
-    text-align: center;
     position: relative;
     width: 100%;
-    min-height: 100vh;
     padding: 20px;
+    z-index: 2; /* Убедитесь, что контейнер выше фона с частицами */
 }
 
-.profile-photo {
-    width: 250px; /* Увеличение размера фото */
-    height: 250px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
-}
-
-.bio-content {
-    max-width: 800px; /* Увеличение ширины контента */
-    margin: 0 auto;
-    line-height: 1.6;
-    padding: 20px;
-}
-
+/* Меню и его стили */
 .menu-icon {
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
     z-index: 10;
-    transition: transform 0.3s; /* Анимация при наведении */
+    transition: transform 0.3s;
 }
 
 .menu-icon:hover {
-    transform: rotate(90deg); /* Вращение иконки при наведении */
+    transform: rotate(90deg);
 }
 
 .menu-icon-bar {
@@ -83,7 +54,7 @@ body {
     width: 200px;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
-    transition: opacity 0.3s, transform 0.3s; /* Анимация появления меню */
+    transition: opacity 0.3s, transform 0.3s;
     opacity: 0;
     transform: translateX(20px);
 }
@@ -108,30 +79,49 @@ body {
     font-size: 18px;
 }
 
-.menu-list li a i {
-    margin-right: 8px; /* Отступ для иконок */
-}
-
 .menu-list li a:hover {
     transform: scale(1.1);
     background-color: #fff;
     color: #000;
 }
 
-.link {
-    color: #f0f0f0;
-    text-decoration: underline;
-    transition: color 0.3s;
+/* Профиль */
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 0 auto; /* Центрирование */
+    position: relative; /* Для позиционирования текста огня */
 }
 
-.link:hover {
-    color: #ffd700;
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Подгонка изображения */
 }
 
-#comment-form {
-    margin-top: 20px;
+.fire-text {
+    position: absolute;
+    bottom: -30px; /* Позиция под фото */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f00; /* Цвет текста */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00, 0 0 70px #f00;
 }
 
+/* Основной контент */
+.bio-content {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Форма и кнопки */
 #comment-text {
     width: 100%;
     max-width: 600px;
@@ -171,19 +161,3 @@ button:hover {
 ::-webkit-scrollbar-track {
     background: #333;
 }
-
-/* Стили для текста с огненной анимацией */
-.fire-text {
-    font-size: 36px;
-    color: #fff;
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
-    margin: 20px 0;
-    animation: flicker 1.5s infinite;
-}
-
-@keyframes flicker {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
