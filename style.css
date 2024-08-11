@@ -85,10 +85,24 @@ body {
     font-size: 18px;
 }
 
+.menu-list li a i {
+    margin-right: 8px;
+}
+
 .menu-list li a:hover {
     transform: scale(1.1);
     background-color: #fff;
     color: #000;
+}
+
+.link {
+    color: #f0f0f0;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #ffd700;
 }
 
 .profile-photo {
@@ -96,33 +110,46 @@ body {
     height: 250px;
     border-radius: 50%;
     border: 5px solid #fff;
-    margin: 20px auto;
+    margin-bottom: 20px;
     position: relative;
+    z-index: 2;
 }
 
 .fire-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6f00;
+    text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
     position: absolute;
-    bottom: -40px;
+    top: 270px; /* Отступ от фото */
     left: 50%;
     transform: translateX(-50%);
-    color: #f00;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00;
-    animation: flame 1s infinite;
+    z-index: 2;
+    animation: flame 1.5s infinite;
 }
 
 @keyframes flame {
-    0% { text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00; }
-    50% { text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00, 0 0 70px #f00; }
-    100% { text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00; }
+    0% {
+        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
+    }
+    50% {
+        text-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00, 0 0 30px #ff6f00, 0 0 40px #ff6f00;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff6f00, 0 0 10px #ff6f00, 0 0 15px #ff6f00, 0 0 20px #ff6f00;
+    }
 }
 
 .bio-content {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     line-height: 1.6;
     padding: 20px;
+    z-index: 2;
+}
+
+#comment-form {
+    margin-top: 20px;
 }
 
 #comment-text {
@@ -151,6 +178,7 @@ button:hover {
     color: #000;
 }
 
+/* Стили для скроллбаров */
 ::-webkit-scrollbar {
     width: 12px;
 }
