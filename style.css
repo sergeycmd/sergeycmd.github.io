@@ -147,6 +147,7 @@ button:hover {
     color: #000;
 }
 
+/* Стили для скроллбаров */
 ::-webkit-scrollbar {
     width: 12px;
 }
