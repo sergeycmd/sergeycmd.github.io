@@ -1,4 +1,3 @@
-/* Основные стили */
 body {
     font-family: 'Stor', serif;
     background-color: #000;
@@ -9,18 +8,25 @@ body {
     overflow-y: auto;
     scroll-behavior: smooth;
     position: relative;
-    min-height: 100vh; /* Убедитесь, что тело занимает весь экран */
+    min-height: 100vh;
 }
 
-/* Контейнер для всего контента */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 .container {
     position: relative;
     width: 100%;
     padding: 20px;
-    z-index: 2; /* Убедитесь, что контейнер выше фона с частицами */
+    z-index: 2;
 }
 
-/* Меню и его стили */
 .menu-icon {
     position: fixed;
     top: 20px;
@@ -85,35 +91,33 @@ body {
     color: #000;
 }
 
-/* Профиль */
 .profile-photo {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: 5px solid #fff;
-    margin: 0 auto; /* Центрирование */
-    position: relative; /* Для позиционирования текста огня */
-}
-
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover; /* Подгонка изображения */
+    margin: 20px auto;
+    position: relative;
 }
 
 .fire-text {
     position: absolute;
-    bottom: -30px; /* Позиция под фото */
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    color: #f00; /* Цвет текста */
+    color: #f00;
     font-size: 24px;
     font-weight: bold;
-    text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00, 0 0 70px #f00;
+    text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00;
+    animation: flame 1s infinite;
 }
 
-/* Основной контент */
+@keyframes flame {
+    0% { text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00; }
+    50% { text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 60px #f00, 0 0 70px #f00; }
+    100% { text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00, 0 0 25px #f00, 0 0 30px #f00, 0 0 35px #f00; }
+}
+
 .bio-content {
     max-width: 800px;
     margin: 20px auto;
@@ -121,7 +125,6 @@ body {
     padding: 20px;
 }
 
-/* Форма и кнопки */
 #comment-text {
     width: 100%;
     max-width: 600px;
@@ -148,7 +151,6 @@ button:hover {
     color: #000;
 }
 
-/* Стили для скроллбаров */
 ::-webkit-scrollbar {
     width: 12px;
 }
