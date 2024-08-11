@@ -38,7 +38,28 @@
         <section id="comments">
             <h2>Комментарии</h2>
             <p>Здесь вы можете оставлять свои комментарии и отзывы о моем контенте. Ваше мнение очень важно для меня, и я буду рад узнать, что вы думаете о моих видео и проектах. Вы можете оставить свой отзыв ниже, и я постараюсь ответить на него как можно скорее.</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSLxvdxbBwmEbuDcaVdARiGeBvpOQKiMBpl8CYDsCJ4T8__Q/viewform?embedded=true" width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSLxvdxbBwmEbuDcaVdARiGeBvpOQKiMBpl8CYDsCJ4T8__Q/viewform?embedded=true" width="640" height="450" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+            
+            <!-- Disqus Comments -->
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  Рекомендуется настроить переменные конфигурации. См. ниже:
+                */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Замените PAGE_URL на URL вашей страницы
+                this.page.identifier = PAGE_IDENTIFIER; // Замените PAGE_IDENTIFIER на уникальный идентификатор вашей страницы
+                };
+                */
+                (function() { // Не редактируйте ничего ниже этой строки
+                var d = document, s = d.createElement('script');
+                s.src = 'https://zadirajack.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Пожалуйста, включите JavaScript, чтобы просмотреть <a href="https://disqus.com/?ref_noscript">комментарии, поддерживаемые Disqus.</a></noscript>
         </section>
     </div>
     <script>
@@ -51,5 +72,6 @@
           });
       });
     </script>
+    <script id="dsq-count-scr" src="//zadirajack.disqus.com/count.js" async></script>
 </body>
 </html>
