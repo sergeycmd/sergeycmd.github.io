@@ -12,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
     scroll-behavior: smooth;
 }
 
@@ -175,13 +174,33 @@ button:hover {
     .menu-list {
         width: 100%;
         max-width: 300px;
-        top: 50px;
+        top: 60px;
         right: 0;
         border-radius: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
 
-    #comments iframe {
+    .menu-list li {
+        font-size: 16px;
+    }
+
+    iframe {
         width: 100%;
-        height: auto;
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-list li {
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    iframe {
+        height: 400px;
     }
 }
