@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Stor';
-    src: url('fonts/Stor.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* Общие настройки для body */
 body {
     font-family: 'Stor', serif;
     background-color: #000;
@@ -12,19 +6,19 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
     scroll-behavior: smooth;
 }
 
+/* Централизованная контейнер */
 .container {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+    width: 90%;
+    max-width: 1200px; /* Устанавливаем максимальную ширину для ПК */
+    margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
 }
 
+/* Фото профиля */
 .profile-photo {
     width: 250px;
     height: 250px;
@@ -34,14 +28,14 @@ body {
     box-sizing: border-box;
 }
 
+/* Контент биографии */
 .bio-content {
-    max-width: 800px;
-    margin: 0 auto;
     line-height: 1.6;
     padding: 20px;
     box-sizing: border-box;
 }
 
+/* Меню и его иконка */
 .menu-icon {
     position: fixed;
     top: 20px;
@@ -112,6 +106,7 @@ body {
     color: #000;
 }
 
+/* Ссылки */
 .link {
     color: #f0f0f0;
     text-decoration: underline;
@@ -122,10 +117,12 @@ body {
     color: #ffd700;
 }
 
+/* Дискуссии */
 #disqus_thread {
     margin-top: 20px;
 }
 
+/* Вставка iframe */
 iframe {
     border: 2px solid #fff;
     border-radius: 5px;
@@ -133,10 +130,10 @@ iframe {
     max-width: 800px;
     height: 450px;
     box-sizing: border-box;
-    display: block; /* Ensure the iframe is displayed correctly */
+    display: block; /* Обеспечивает правильное отображение */
 }
 
-/* Стили для скроллбаров */
+/* Настройка скроллбаров */
 ::-webkit-scrollbar {
     width: 12px;
 }
