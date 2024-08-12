@@ -51,9 +51,13 @@
             <!-- Disqus Comments -->
             <div id="disqus_thread"></div>
             <script>
+                var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Замените PAGE_URL на канонический URL вашей страницы
+                    this.page.identifier = PAGE_IDENTIFIER; // Замените PAGE_IDENTIFIER на уникальный идентификатор вашей страницы
+                };
                 (function() { // Не редактируйте ничего ниже этой строки
                 var d = document, s = d.createElement('script');
-                s.src = 'https://zadirajack.disqus.com/embed.js';
+                s.src = 'https://zadirajack-1.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
                 })();
@@ -75,6 +79,6 @@
     </script>
 
     <!-- Disqus счетчик -->
-    <script id="dsq-count-scr" src="//zadirajack.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//zadirajack-1.disqus.com/count.js" async></script>
 </body>
 </html>
