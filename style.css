@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'Stor';
-    src: url('https://zadirajack.github.io/fonts/Stor.woff'),
-         url('https://zadirajack.github.io/fonts/Stor.ttf');
+    src: url('https://zadirajack.github.io/fonts/Stor.woff') format('woff'),
+         url('https://zadirajack.github.io/fonts/Stor.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 
 body {
     font-family: 'Stor', serif;
