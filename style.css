@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Stor';
-    src: url('https://zadirajack.github.io/fonts/Stor.woff') format('woff'),
-         url('https://zadirajack.github.io/fonts/Stor.ttf') format('truetype');
+    src: url('https://zadirajack.github.io/fonts/Stor.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
