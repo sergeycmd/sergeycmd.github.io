@@ -168,3 +168,25 @@ iframe {
 ::-webkit-scrollbar-track {
     background: #333;
 }
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu-icon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-list {
+        width: 100%;
+        right: 0;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
