@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQEHPY2W4M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,17 +18,22 @@
 </head>
 <body>
     <div class="container">
+        <!-- Иконка меню -->
         <div class="menu-icon">
             <div class="menu-icon-bar"></div>
             <div class="menu-icon-bar"></div>
             <div class="menu-icon-bar"></div>
         </div>
+
+        <!-- Меню -->
         <ul class="menu-list">
             <li><a href="https://www.tiktok.com/@zadirajack"><i class="fab fa-tiktok"></i> TikTok</a></li>
             <li><a href="https://t.me/zadiraJack"><i class="fab fa-telegram"></i> Telegram</a></li>
             <li><a href="https://t.me/TGSikorskiy"><i class="fas fa-user"></i> Менеджер</a></li>
             <li><a href="https://www.tinkoff.ru/cf/1DrUvbVtpoC"><i class="fas fa-donate"></i> Донаты</a></li>
         </ul>
+
+        <!-- Контент -->
         <div class="bio-content">
             <img src="images/your-photo.jpg" alt="Сергей Ефремов" class="profile-photo">
             <p>Привет! Меня зовут Сергей Ефремов, но в интернете я известен как Задира Джек. Я занимаюсь созданием комедийных скетчей и развлекательных видео на TikTok.<br><br>
@@ -37,6 +43,7 @@
             <p>Я всегда открыт для новых предложений и сотрудничества. С радостью делаю коллаборации с другими создателями контента, особенно если это приносит радость зрителям и поднимает настроение. Моя цель – создавать качественные и оригинальные видео, которые выделяются среди множества других. Я стремлюсь постоянно улучшать свои навыки, экспериментировать с форматами и идеями, чтобы радовать своих зрителей чем-то новым и интересным.</p>
         </div>
         
+        <!-- Секция комментариев -->
         <section id="comments">
             <h2>Комментарии</h2>
             <p>Здесь вы можете оставлять свои комментарии и отзывы о моем контенте. Ваше мнение очень важно для меня, и я буду рад узнать, что вы думаете о моих видео и проектах. Вы можете оставить свой отзыв ниже, и я постараюсь ответить на него как можно скорее.</p>
@@ -54,6 +61,8 @@
             <noscript>Пожалуйста, включите JavaScript, чтобы просмотреть <a href="https://disqus.com/?ref_noscript">комментарии, поддерживаемые Disqus.</a></noscript>
         </section>
     </div>
+
+    <!-- Скрипт для меню -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
           const menuIcon = document.querySelector('.menu-icon');
@@ -64,6 +73,8 @@
           });
       });
     </script>
+
+    <!-- Disqus счетчик -->
     <script id="dsq-count-scr" src="//zadirajack.disqus.com/count.js" async></script>
 </body>
 </html>
